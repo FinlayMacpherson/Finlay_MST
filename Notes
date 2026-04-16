@@ -1,0 +1,8 @@
+File's needed
+
+main.py - The entry point (runs the whole thing) Also contains anything for (SHA256, file reading)
+point.py - Defines the Point class
+graph.py - Defines the Graph class and neighbor logic
+mst.py - Contains Kruskal's algorithm and UnionFind
+renderer.py - Handles SVG generation
+
