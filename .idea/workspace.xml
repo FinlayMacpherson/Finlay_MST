@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a416d7-7752-4de4-b516-0e27c53dd653" name="Changes" comment="Name fix">
+    <list default="true" id="45a416d7-7752-4de4-b516-0e27c53dd653" name="Changes" comment="Added comments to each class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mst.py" beforeDir="false" afterPath="$PROJECT_DIR$/mst.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/point.py" beforeDir="false" afterPath="$PROJECT_DIR$/point.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776345629986</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added comments to each class">
+      <option name="closed" value="true" />
+      <created>1776639244448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776639244448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Name fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Name fix" />
+    <MESSAGE value="Added comments to each class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to each class" />
   </component>
 </project>
