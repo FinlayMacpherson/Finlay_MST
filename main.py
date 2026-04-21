@@ -5,7 +5,7 @@ import hashlib
 import numpy as np
 from graph import Graph
 from mst import KruskalMST
-from Renderer import SVGRenderer
+from renderer import SVGRenderer
 
 def main():
     g = Graph()
