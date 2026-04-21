@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a416d7-7752-4de4-b516-0e27c53dd653" name="Changes" comment="Removing separate point class. Not needed">
+    <list default="true" id="45a416d7-7752-4de4-b516-0e27c53dd653" name="Changes" comment="Graph logic added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mst.py" beforeDir="false" afterPath="$PROJECT_DIR$/mst.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "Python.mst.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -118,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776640425678</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Graph logic added">
+      <option name="closed" value="true" />
+      <created>1776641590920</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776641590920</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +140,7 @@
     <MESSAGE value="Name fix" />
     <MESSAGE value="Added comments to each class" />
     <MESSAGE value="Removing separate point class. Not needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing separate point class. Not needed" />
+    <MESSAGE value="Graph logic added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Graph logic added" />
   </component>
 </project>
