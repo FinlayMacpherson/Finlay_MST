@@ -1,19 +1,27 @@
 # --- Finlay Macpherson --- Data Structures and Algorithms Assessment ---
 #Takes the final edges and points and renders them as a visual graph using SVG graphics
 
-import matplotlib.pyplot as plt
 
-class SVGRenderer:
-    def __init__(Self, Edges):
-        Self.Edges = Edges
+def render_svg(edges, filename="output.svg"):
+    svg_content = ['<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">']
 
-    def Render(Self, filename="output.svg"):
-        for _, P1, P2 in Self.Edges:
-            plt.plot([P1[0], P2[0]], [P1[1], P2[1]], 'b-')
+    # Draw lines
+    for Weight, p1, p2 in edges:
+        if isinstance(p1, tuple):
+            x1, y1 = p1
+            x2, y2 = p2
+            svg_content.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="blue" />')
 
-        points = {tuple(p) for _, P1, P2 in Self.Edges for p in (P1, P2)}
-        for p in points:
-            plt.plot(p[0], p[1], 'ro',)
+    # Draw points
+    points = set()
+    for _, p1, p2 in edges:
+        if isinstance(p1, tuple): points.add(p1)
+        if isinstance(p2, tuple): points.add(p2)
 
-        plt.savefig(filename)
-        plt.show()
+    for x, y in points:
+        svg_content.append(f'<circle cx="{x}" cy="{y}" r="3" fill="red" />')
+
+    svg_content.append('</svg>')
+
+    with open(filename, 'w') as f:
+        f.write('\n'.join(svg_content))

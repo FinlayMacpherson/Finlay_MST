@@ -28,7 +28,6 @@ class KruskalMST:
 
         for Weight, P1, P2 in Self.Edges:
             if Self.Find(Parent, tuple(P1)) != Self.Find(Parent, tuple(P2)):
-                MST.append(Weight)
                 Self.Union(Parent, Rank, tuple(P1), tuple(P2))
                 MST.append((Weight, P1, P2))
 

@@ -1,11 +1,10 @@
 # --- Finlay Macpherson --- Data Structures and Algorithms Assessment ---
 
 
-import hashlib
 import numpy as np
 from graph import Graph
 from mst import KruskalMST
-from renderer import SVGRenderer
+from renderer import render_svg
 
 def main():
     g = Graph()
@@ -17,7 +16,7 @@ def main():
 
     MST = KruskalMST(Edges).Compute()
 
-    SVGRenderer(MST).Render("output.svg")
+    render_svg(MST).Render("output.svg")
 
     print(f"MST computed with {len(MST)} edges. Saved to output.svg.")
 
