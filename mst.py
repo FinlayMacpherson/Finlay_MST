@@ -21,14 +21,23 @@ class KruskalMST:
             Rank[ra] += 1
 
     def Compute(Self):
-        Nodes = list({tuple(p) for _, P1, P2 in Self.Edges for p in (P1, P2)})
+        Nodes = set()
+        for _, P1, P2 in Self.Edges:
+            Nodes.add(tuple(P1)) #Converting lists to tuples so they can be added to a set
+            Nodes.add(tuple(P2))
+        Nodes = list(Nodes)
+
+
         Parent = {n: n for n in Nodes}
         Rank = {n:0 for n in Nodes}
         MST = []
 
         for Weight, P1, P2 in Self.Edges:
-            if Self.Find(Parent, tuple(P1)) != Self.Find(Parent, tuple(P2)):
-                Self.Union(Parent, Rank, tuple(P1), tuple(P2))
+            Node1 = tuple(P1)
+            Node2 = tuple(P2)
+
+            if Self.Find(Parent, Node1) != Self.Find(Parent, Node2):
                 MST.append((Weight, P1, P2))
+                Self.Union(Parent, Rank, Node1, Node2)
 
         return MST

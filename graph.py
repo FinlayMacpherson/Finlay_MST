@@ -3,7 +3,6 @@
 
 import numpy as np
 
-
 class Graph:
     def __init__(Self): # Initialise an empty list to store all the points
         Self.Points = []
@@ -15,7 +14,8 @@ class Graph:
         Edges = [] # This will hold all the edges as tuples with both points connected by distance
         for i in range(len(Self.Points)):
             for j in range(i + 1, len(Self.Points)):
-                P1, P2 = np.array(Self.Points[i]), np.array(Self.Points[j])
-                Distance = np.linalg.norm(np.array(P1) - np.array(P2))
+                P1 = Self.Points[i]
+                P2 = Self.Points[j]
+                Distance = np.linalg.norm(P1 - P2) #Turns arrays into numpy arrays
                 Edges.append([Distance, P1, P2])
         return Edges

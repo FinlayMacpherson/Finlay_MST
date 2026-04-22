@@ -4,7 +4,7 @@
 import numpy as np
 from graph import Graph
 from mst import KruskalMST
-from renderer import render_svg
+from renderer import SVGRenderer
 
 def main():
     g = Graph()
@@ -16,7 +16,7 @@ def main():
 
     MST = KruskalMST(Edges).Compute()
 
-    render_svg(MST).Render("output.svg")
+    SVGRenderer(MST).Render("output.svg")
 
     print(f"MST computed with {len(MST)} edges. Saved to output.svg.")
 
