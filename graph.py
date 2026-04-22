@@ -8,7 +8,7 @@ class Graph:
         Self.Points = []
 
     def AddPoints(Self, Point):
-        Self.Points.append(Point)  # Append a new point
+        Self.Points.append(Point)  # Function to append a new point in the empty array we just created above
 
     def GetEdges(Self):
         Edges = [] # This will hold all the edges as tuples with both points connected by distance
