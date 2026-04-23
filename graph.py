@@ -16,6 +16,6 @@ class Graph:
             for j in range(i + 1, len(Self.Points)):
                 P1 = Self.Points[i]
                 P2 = Self.Points[j]
-                Distance = np.linalg.norm(P1 - P2) #Turns arrays into numpy arrays
+                Distance = np.linalg.norm(P1 - P2) #Calculates straight line distance between points using numpy
                 Edges.append([Distance, P1, P2])
         return Edges

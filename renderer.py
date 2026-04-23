@@ -2,11 +2,11 @@
 #Takes the final edges and points and renders them as a visual graph using SVG graphics
 
 
-class SVGRenderer:  # ✅ Use 'class', not 'def'
-    def __init__(self, Edges):  # ✅ Indented under class
+class SVGRenderer:
+    def __init__(self, Edges):
         self.edges = Edges
 
-    def Render(self, filename="output.svg"):  # ✅ Indented under class
+    def Render(self, filename="output.svg"):
         svg_content = ['<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">']
 
         def to_coords(p):
@@ -14,8 +14,7 @@ class SVGRenderer:  # ✅ Use 'class', not 'def'
                 return list(p)
             return p
 
-            # Draw lines
-
+        # Draw lines
         for Weight, p1, p2 in self.edges:
             # Convert to list to ensure we can index them
             c1 = to_coords(p1)
@@ -31,7 +30,7 @@ class SVGRenderer:  # ✅ Use 'class', not 'def'
         for _, p1, p2 in self.edges:
             c1 = to_coords(p1)
             c2 = to_coords(p2)
-            # Convert to tuple for the set (lists are not hashable)
+            # Convert to tuple for the set
             points.add(tuple(c1))
             points.add(tuple(c2))
 
